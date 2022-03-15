@@ -5,4 +5,6 @@ module com.example.assignment2 {
 
     opens com.example.assignment2 to javafx.fxml;
     exports com.example.assignment2;
+    exports;
+    opens to
 }

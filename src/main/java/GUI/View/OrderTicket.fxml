@@ -9,8 +9,8 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane prefHeight="494.0" prefWidth="407.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Controller.OrderTicketController">
    <children>
@@ -44,12 +44,12 @@
                   <Font size="25.0" />
                </font>
             </Label>
-            <Label prefHeight="49.0" prefWidth="177.0" text="Food option:" GridPane.rowIndex="3">
+            <Label prefHeight="49.0" prefWidth="177.0" text="Label" GridPane.rowIndex="3">
                <font>
                   <Font size="25.0" />
                </font>
             </Label>
-            <Label prefHeight="49.0" prefWidth="177.0" text="reserve table:" GridPane.rowIndex="4">
+            <Label prefHeight="49.0" prefWidth="177.0" text="Label" GridPane.rowIndex="4">
                <font>
                   <Font size="25.0" />
                </font>
@@ -95,9 +95,26 @@
                   <Font size="15.0" />
                </font>
             </RadioButton>
+            <Label prefHeight="51.0" prefWidth="170.0" text="Label" GridPane.rowIndex="5">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label prefHeight="49.0" prefWidth="172.0" text="Label" GridPane.rowIndex="6">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
          </children>
       </GridPane>
       <Button layoutX="293.0" layoutY="435.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="103.0" style="-fx-background-radius: 25;" text="Confirm" />
       <Button layoutX="182.0" layoutY="435.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="103.0" style="-fx-background-radius: 25;" text="Cancel" />
+      <Line endX="57.0" endY="-15.5" layoutX="133.0" layoutY="435.0" startX="57.0" startY="-435.0" />
+      <Label layoutX="14.0" layoutY="440.0" prefHeight="26.0" prefWidth="46.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="76.0" layoutY="441.0" prefHeight="25.0" prefWidth="67.0" />
    </children>
 </AnchorPane>

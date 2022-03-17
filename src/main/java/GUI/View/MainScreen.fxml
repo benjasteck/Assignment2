@@ -17,19 +17,19 @@
             <Image url="@Images/easv-logo-png-4.png" />
          </image>
       </ImageView>
-      <TableView layoutX="14.0" layoutY="156.0" prefHeight="364.0" prefWidth="256.0">
+      <TableView fx:id="eventTable" layoutX="14.0" layoutY="156.0" prefHeight="364.0" prefWidth="256.0">
         <columns>
-          <TableColumn prefWidth="84.0" text="Title" />
-          <TableColumn prefWidth="86.0" text="Location" />
-            <TableColumn prefWidth="85.0" text="Time" />
+          <TableColumn fx:id="titleColoumn" prefWidth="84.0" text="Title" />
+          <TableColumn fx:id="locationColoumn" prefWidth="86.0" text="Location" />
+            <TableColumn fx:id="timeColoumn" prefWidth="85.0" text="Time" />
         </columns>
       </TableView>
-      <Button contentDisplay="CENTER" ellipsisString="⚙" graphicTextGap="0.0" layoutX="672.0" layoutY="12.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="52.0" style="-fx-background-radius: 100;" text="⚙" visible="false" wrapText="true">
+      <Button fx:id="logInBtn" contentDisplay="CENTER" ellipsisString="⚙" graphicTextGap="0.0" layoutX="672.0" layoutY="12.0" mnemonicParsing="false" onAction="#logIn" prefHeight="52.0" prefWidth="52.0" style="-fx-background-radius: 100;" text="⚙" visible="false" wrapText="true">
          <font>
             <Font size="21.0" />
          </font>
       </Button>
-      <ImageView fitHeight="52.0" fitWidth="54.0" layoutX="674.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="btnView" fitHeight="52.0" fitWidth="54.0" layoutX="674.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Images/cock-cogwheel-gear-zahnrad-icons-png-651195.png" />
          </image>
@@ -39,8 +39,8 @@
             <Font name="System Italic" size="15.0" />
          </font>
       </Text>
-      <TextArea layoutX="283.0" layoutY="145.0" prefHeight="375.0" prefWidth="363.0" />
-      <ImageView fitHeight="131.0" fitWidth="363.0" layoutX="283.0" layoutY="14.0" pickOnBounds="true">
+      <TextArea fx:id="eventTextArea" layoutX="283.0" layoutY="145.0" prefHeight="375.0" prefWidth="363.0" />
+      <ImageView fx:id="eventView" fitHeight="131.0" fitWidth="363.0" layoutX="283.0" layoutY="14.0" pickOnBounds="true">
          <image>
             <Image url="@../../../../../../OneDrive/Billeder/golfen.png" />
          </image>
